@@ -5,7 +5,7 @@ import {
   Button,
 } from 'components/FeedbackOptions/FeedbackOptions.styled';
 
-export default function FeedbackOptions({ options, onLeaveFeedback }) {
+function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
     <ButtonList>
       {options.map(option => (
@@ -18,3 +18,5 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
     </ButtonList>
   );
 }
+
+export default FeedbackOptions;

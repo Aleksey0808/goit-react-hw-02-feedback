@@ -4,13 +4,7 @@ import {
   StatisticItem,
 } from 'components/Statistics/Statistics.styled';
 
-export default function Statistics({
-  good,
-  neutral,
-  bad,
-  total,
-  positivePercentage,
-}) {
+function Statistics({ good, neutral, bad, total, positivePercentage }) {
   return (
     <div>
       <StatisticList>
@@ -23,3 +17,5 @@ export default function Statistics({
     </div>
   );
 }
+
+export default Statistics;
