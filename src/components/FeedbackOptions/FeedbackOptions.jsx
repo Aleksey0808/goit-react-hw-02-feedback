@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   ButtonList,
   ButtonItem,
@@ -18,5 +19,10 @@ function FeedbackOptions({ options, onLeaveFeedback }) {
     </ButtonList>
   );
 }
+
+FeedbackOptions.prototype = {
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
+};
 
 export default FeedbackOptions;
